@@ -32,4 +32,9 @@ public class MobileWalletAccountServiceImpl implements  MobileWalletAccountServi
 		return mobileWalletAccountRepository.findById(id)	;
 	}
 
+	@Override
+	public Mono<MobileWalletAccount> findByCellphoneNumber(String cellphoneNumber) {
+		return mobileWalletAccountRepository.findByCellphoneNumber(cellphoneNumber);
+	}
+
 }

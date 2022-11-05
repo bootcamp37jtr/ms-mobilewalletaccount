@@ -8,4 +8,6 @@ public interface MobileWalletAccountService {
 	Mono<MobileWalletAccount> saveAccount(Mono<MobileWalletAccount> mobileWalletAccount);
 	
 	Mono<MobileWalletAccount> findById(String id);
+	
+	Mono<MobileWalletAccount> findByCellphoneNumber(String cellphoneNumber);
 }
